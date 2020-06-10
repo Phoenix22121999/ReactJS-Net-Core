@@ -1,0 +1,104 @@
+*,
+body {
+    box-sizing: border-box;
+    /* margin: 0 !important; */
+    /* padding: 0 !important ; */
+}
+.name {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5px !important ;
+    margin: 0 !important;
+    display: flex;
+    /* background-color: yellow; */
+    height: 100%;
+    grid-area: name;
+}
+.level {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5px !important ;
+    margin: 0 !important;
+    display: flex;
+    height: 100%;
+    /* background-color: red; */
+    grid-area: level;
+}
+.button-form {
+    /* background-color: pink; */
+    /* padding: 0 5rem; */
+    /* margin: 0 0.5rem; */
+    display: table-cell;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    /* margin: 0 0.75rem 0 0.75rem; */
+    /* height: 100%; */
+}
+.action {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.75rem !important ;
+    margin: 0 !important;
+    display: flex;
+    /* background-color: blue; */
+    height: 100%;
+    grid-area: action;
+}
+.container-form {
+    /* background-color: green; */
+    grid-template-columns: 55.8% 22% 22%;
+    justify-content: stretch;
+    margin: 0 !important;
+    /* column-gap: 0.5rem; */
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "name level action";
+}
+.td {
+    padding: 0 !important ;
+    /* margin: 0; */
+    /* background-color: white; */
+}
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    .container-form {
+        background-color: green;
+        grid-template-columns: 52% 22% 20%;
+        justify-content: stretch;
+        margin: 0 !important;
+        column-gap: 1%;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: grid;
+        grid-template-areas: "name level action";
+    }
+    .action {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding: 0.75rem !important ; */
+        /* margin: 0 !important; */
+        display: flex;
+        /* background-color: blue; */
+        height: 100%;
+        grid-area: action;
+    }
+}
+/* @media only screen and (max-width: 800px) {
+    .container-form {
+        /* background-color: green; */
+/* grid-template-columns: 45% 22% 20%; */
+/* justify-content: stretch; */
+/* margin: 0 !important; */
+/* column-gap: 1%; */
+/* width: 100%; */
+/* position: relative;/ */
+/* height: 100%; */
+/* display: grid; */
+/* grid-template-areas: "name level action";/ */
+/* } */
+/* }  */
